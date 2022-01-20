@@ -1,0 +1,177 @@
+/*Reset do CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    background-color: hsl(225, 100%, 94%);
+    padding: 0 2%;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.w80{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.w70 {
+    width: 70%;
+    margin:0 auto;
+}
+
+h1 {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+p {
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+
+/*Main*/
+.main {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+/*Card*/
+.card {
+    max-width: 375px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.card > div {
+    margin-bottom: 15px;
+}
+
+.card__img img {
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.card__title {
+    font-size: 14px;
+    text-align: center;
+}
+
+.card__text {
+    font-size: 15px;
+    text-align: center;
+}
+
+.card__annual-plan {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 20px;
+    padding: 5%;
+    display: grid;
+    text-align: left;
+    grid-template-columns: 60px 120px 80px;
+}
+
+.annual-plan__audio-icon {
+    grid-row-start: 1;
+    grid-row-end:3;
+}
+
+.annual-plan__title {
+    font-size: 8px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.annual-plan__price {
+    font-size: 16px;
+    grid-row-start: 2;
+    grid-row-end:3;
+    width: 100%;
+}
+
+.annual-plan__button {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    font-size: 14px;
+    text-align: right;
+    width: 100%;
+    position: relative;
+}
+
+.annual-plan__button a {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+}
+
+.annual-plan__button a:hover {
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.buttons__proceed{
+    background-color:hsl(245, 75%, 52%);
+    padding: 3%;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0px 5px 30px -10px hsl(245, 75%, 52%);
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.buttons__proceed a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.buttons__proceed:hover {
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+.buttons__cancel {
+    padding: 3%;
+    text-align: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.buttons__cancel a{
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.buttons__cancel a:hover {
+    transition: 0.5s;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+.footer{ 
+    font-size: 11px; text-align: center; 
+    padding-bottom: 30px
+}
+
+.footer a span {
+    color: hsl(223, 47%, 23%);
+}
